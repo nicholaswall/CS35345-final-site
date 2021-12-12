@@ -57,8 +57,9 @@ const Card = () => {
             fontWeight="700"
             rounded="md"
             _hover={{ bg: "gray.500" }}
+            href="/library.zip"
           >
-            <a href="/library.zip">Download ZIP</a>
+            Download ZIP
           </Link>
 
           <Link
@@ -70,10 +71,9 @@ const Card = () => {
             fontWeight="700"
             rounded="md"
             _hover={{ bg: "gray.500" }}
+            href="https://github.com/nicholaswall/CSE5345-Labs/tree/main/Lab3/Code"
           >
-            <a href="https://github.com/nicholaswall/CSE5345-Labs/tree/main/Lab3/Code">
-              View code on github (requires access)
-            </a>
+            View code on github (requires access)
           </Link>
         </Flex>
       </Box>

@@ -6,7 +6,7 @@ import NextImage from "next/image";
 
 //@ts-expect-error
 const myLoader = ({ src, width, quality }) => {
-  return src;
+  return "/CS35345-final-site/" + src;
 };
 
 const Docs = () => {
