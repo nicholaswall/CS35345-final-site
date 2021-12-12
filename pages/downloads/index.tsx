@@ -58,7 +58,7 @@ const Card = () => {
             rounded="md"
             _hover={{ bg: "gray.500" }}
           >
-            <a href="/CS35345-final-site/library.zip">Download ZIP</a>
+            <a href="/library.zip">Download ZIP</a>
           </Link>
 
           <Link

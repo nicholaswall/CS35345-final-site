@@ -17,4 +17,5 @@ module.exports = {
   //   }
   // ]
 // }
+  basePath: '/CS35345-final-site'
 }

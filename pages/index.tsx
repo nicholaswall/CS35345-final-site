@@ -76,7 +76,7 @@ const Hero = () => {
                 spacing={{ base: 4, md: 2 }}
                 justifyContent="center"
               >
-                <NextLink href="/CS35345-final-site/docs">
+                <NextLink href="/docs">
                   <Box
                     rounded="full"
                     shadow="md"
