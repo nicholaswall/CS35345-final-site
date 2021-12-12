@@ -57,7 +57,7 @@ const Card = () => {
             fontWeight="700"
             rounded="md"
             _hover={{ bg: "gray.500" }}
-            href="/library.zip"
+            href="/CS35345-final-site/library.zip"
           >
             Download ZIP
           </Link>
