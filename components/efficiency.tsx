@@ -14,7 +14,7 @@ export default function Efficiency() {
       <Box>
         <Icon
           boxSize={12}
-          color={useColorModeValue("brand.700")}
+          color={useColorModeValue("blue.700", "blue.700")}
           mb={4}
           fill="none"
           viewBox="0 0 24 24"
@@ -28,7 +28,7 @@ export default function Efficiency() {
           fontSize="lg"
           lineHeight="shorter"
           fontWeight="bold"
-          color={useColorModeValue("gray.900")}
+          color={useColorModeValue("gray.900", "gray.900")}
         >
           {props.title}
         </chakra.h3>

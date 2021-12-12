@@ -72,7 +72,9 @@ const Card = () => {
             rounded="md"
             _hover={{ bg: "gray.500" }}
           >
-            <a href="/github">View code on github (requires access)</a>
+            <a href="https://github.com/nicholaswall/CSE5345-Labs/tree/main/Lab3/Code">
+              View code on github (requires access)
+            </a>
           </Link>
         </Flex>
       </Box>

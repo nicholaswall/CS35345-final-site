@@ -20,7 +20,7 @@ const Feature = (props: any) => {
         boxSize={5}
         mt={1}
         mr={2}
-        color={useColorModeValue("brand.500", "brand.300")}
+        color={useColorModeValue("blue.500", "blue.300")}
         viewBox="0 0 20 20"
         fill="currentColor"
       >
@@ -74,7 +74,7 @@ const Features = (props: any) => {
                 fontSize={{ base: "3xl", md: "4xl" }}
                 fontWeight="extrabold"
                 textAlign={{ base: "center", sm: "left" }}
-                color={useColorModeValue("black")}
+                color={useColorModeValue("black", "black")}
                 lineHeight="shorter"
                 letterSpacing="tight"
               >
@@ -94,7 +94,7 @@ const Features = (props: any) => {
                 as="a"
                 variant="solid"
                 w={{ base: "full", sm: "auto" }}
-                colorScheme="brand"
+                colorScheme="blue"
                 size="lg"
               >
                 Become a Partner

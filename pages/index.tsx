@@ -104,7 +104,8 @@ const Hero = () => {
                   mt={[3, 0]}
                   ml={[null, 3]}
                   onClick={() => {
-                    router.push("/demo");
+                    // router.push("/demo");
+                    router.push("https://sorting-avfafd6e7q-uc.a.run.app/");
                   }}
                 >
                   <chakra.a

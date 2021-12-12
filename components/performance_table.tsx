@@ -2,8 +2,6 @@ import React from "react";
 import {
   Flex,
   useColorModeValue,
-  ButtonGroup,
-  IconButton,
   Table,
   Thead,
   Tr,
@@ -13,8 +11,6 @@ import {
   chakra,
   Stack,
 } from "@chakra-ui/react";
-import { AiFillEdit } from "react-icons/ai";
-import { BsBoxArrowUpRight, BsFillTrashFill } from "react-icons/bs";
 
 export default function PerformanceTable() {
   const header = ["Sort", "Data", "Duration"];
@@ -121,7 +117,7 @@ export default function PerformanceTable() {
                               display: "none",
                             },
                             textTransform: "uppercase",
-                            color: useColorModeValue("gray.600", "gray.600"),
+                            color: "gray.600",
                             fontSize: "xs",
                             fontWeight: "bold",
                             letterSpacing: "wider",
@@ -131,48 +127,16 @@ export default function PerformanceTable() {
                           {x}
                         </Td>
                         <Td
-                          color={useColorModeValue("gray.700")}
+                          color="gray.700"
                           fontSize="md"
                           fontWeight="hairline"
                         >
+                          {/*@ts-expect-error*/}
                           {token[x]}
                         </Td>
                       </React.Fragment>
                     );
                   })}
-                  {/* <Td
-                  display={{
-                    base: "table-cell",
-                    md: "none",
-                  }}
-                  sx={{
-                    "@media print": {
-                      display: "none",
-                    },
-                    textTransform: "uppercase",
-                    color: useColorModeValue("gray.400", "gray.400"),
-                    fontSize: "xs",
-                    fontWeight: "bold",
-                    letterSpacing: "wider",
-                    fontFamily: "heading",
-                  }}
-                >
-                  Actions
-                </Td>
-                <Td>
-                  <ButtonGroup variant="solid" size="sm" spacing={3}>
-                    <IconButton
-                      colorScheme="blue"
-                      icon={<BsBoxArrowUpRight />}
-                    />
-                    <IconButton colorScheme="green" icon={<AiFillEdit />} />
-                    <IconButton
-                      colorScheme="red"
-                      variant="outline"
-                      icon={<BsFillTrashFill />}
-                    />
-                  </ButtonGroup>
-                </Td> */}
                 </Tr>
               );
             })}

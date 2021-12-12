@@ -4,6 +4,11 @@ import React from "react";
 import Header from "../../components/header";
 import NextImage from "next/image";
 
+//@ts-expect-error
+const myLoader = ({ src, width, quality }) => {
+  return src;
+};
+
 const Docs = () => {
   return (
     <>
@@ -44,13 +49,25 @@ const Docs = () => {
           library in the browser
         </chakra.h1>
         <Spacer />
-        <NextImage src="/carbon.png" width={1380} height={1712} />
+        <NextImage
+          src="/carbon.png"
+          width={1380}
+          height={1712}
+          /*@ts-expect-error */
+          loader={myLoader}
+        />
         <chakra.h1>
           Take a look at the example below to get an example of how to use the
           library natively
         </chakra.h1>
         <Spacer />
-        <NextImage src="/carbon (1).png" width={1952} height={1414} />
+        <NextImage
+          src="/carbon (1).png"
+          width={1952}
+          height={1414}
+          //@ts-expect-error
+          loader={myLoader}
+        />
       </Container>
     </>
   );
