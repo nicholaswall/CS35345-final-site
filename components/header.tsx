@@ -19,17 +19,17 @@ const Header = () => {
       spacing={4}
     >
       <HStack>
-        <NextLink href={"/"} passHref>
+        <NextLink href={"/CS35345-final-site/"} passHref>
           <Button as="a" variant="ghost">
             {"Home"}
           </Button>
         </NextLink>
-        <NextLink href={"/docs"} passHref>
+        <NextLink href={"/CS35345-final-site/docs"} passHref>
           <Button as="a" variant="ghost">
             {"Docs"}
           </Button>
         </NextLink>
-        <NextLink href={"/downloads"} passHref>
+        <NextLink href={"/CS35345-final-site/downloads"} passHref>
           <Button as="a" variant="ghost">
             {"Downloads"}
           </Button>

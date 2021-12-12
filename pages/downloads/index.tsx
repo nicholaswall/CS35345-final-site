@@ -3,7 +3,6 @@ import Header from "../../components/header";
 import {
   chakra,
   Box,
-  Image,
   Flex,
   useColorModeValue,
   Link,
@@ -59,7 +58,7 @@ const Card = () => {
             rounded="md"
             _hover={{ bg: "gray.500" }}
           >
-            <a href="/library.zip">Download ZIP</a>
+            <a href="/CS35345-final-site/library.zip">Download ZIP</a>
           </Link>
 
           <Link

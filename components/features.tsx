@@ -90,15 +90,6 @@ const Features = (props: any) => {
                 of variations and even paralleized implementations of several
                 sorts.
               </chakra.p>
-              <Button
-                as="a"
-                variant="solid"
-                w={{ base: "full", sm: "auto" }}
-                colorScheme="blue"
-                size="lg"
-              >
-                Become a Partner
-              </Button>
             </Box>
             <VStack
               direction="column"

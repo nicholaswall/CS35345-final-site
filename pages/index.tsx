@@ -14,6 +14,7 @@ import { useRouter } from "next/router";
 import Features from "../components/features";
 import Efficiency from "../components/efficiency";
 import PerformanceTable from "../components/performance_table";
+import NextLink from "next/link";
 
 const Hero = () => {
   const router = useRouter();
@@ -75,57 +76,61 @@ const Hero = () => {
                 spacing={{ base: 4, md: 2 }}
                 justifyContent="center"
               >
-                <Box
-                  rounded="full"
-                  shadow="md"
-                  onClick={() => {
-                    router.push("/docs");
-                  }}
-                >
-                  <chakra.a
-                    w="full"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    border="solid 1px transparent"
-                    fontSize={{ base: "md", md: "lg" }}
-                    rounded="md"
-                    color="white"
-                    bg="blue.600"
-                    _hover={{ bg: "blue.700" }}
-                    px={{ base: 8, md: 10 }}
-                    py={{ base: 3, md: 4 }}
-                    cursor="pointer"
+                <NextLink href="/CS35345-final-site/docs">
+                  <Box
+                    rounded="full"
+                    shadow="md"
+                    onClick={() => {
+                      router.push("/docs");
+                    }}
                   >
-                    Get started
-                  </chakra.a>
-                </Box>
-                <Box
-                  mt={[3, 0]}
-                  ml={[null, 3]}
-                  onClick={() => {
-                    // router.push("/demo");
-                    router.push("https://sorting-avfafd6e7q-uc.a.run.app/");
-                  }}
-                >
-                  <chakra.a
-                    w="full"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    px={{ base: 8, md: 10 }}
-                    py={{ base: 3, md: 4 }}
-                    border="solid 1px transparent"
-                    fontSize={{ base: "md", md: "lg" }}
-                    rounded="md"
-                    color="blue.700"
-                    bg="blue.100"
-                    _hover={{ bg: "blue.200" }}
-                    cursor="pointer"
+                    <chakra.a
+                      w="full"
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="center"
+                      border="solid 1px transparent"
+                      fontSize={{ base: "md", md: "lg" }}
+                      rounded="md"
+                      color="white"
+                      bg="blue.600"
+                      _hover={{ bg: "blue.700" }}
+                      px={{ base: 8, md: 10 }}
+                      py={{ base: 3, md: 4 }}
+                      cursor="pointer"
+                    >
+                      Get started
+                    </chakra.a>
+                  </Box>
+                </NextLink>
+                <NextLink href="https://sorting-avfafd6e7q-uc.a.run.app/">
+                  <Box
+                    mt={[3, 0]}
+                    ml={[null, 3]}
+                    onClick={() => {
+                      // router.push("/demo");
+                      // router.push("https://sorting-avfafd6e7q-uc.a.run.app/");
+                    }}
                   >
-                    Live demo
-                  </chakra.a>
-                </Box>
+                    <chakra.a
+                      w="full"
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="center"
+                      px={{ base: 8, md: 10 }}
+                      py={{ base: 3, md: 4 }}
+                      border="solid 1px transparent"
+                      fontSize={{ base: "md", md: "lg" }}
+                      rounded="md"
+                      color="blue.700"
+                      bg="blue.100"
+                      _hover={{ bg: "blue.200" }}
+                      cursor="pointer"
+                    >
+                      Live demo
+                    </chakra.a>
+                  </Box>
+                </NextLink>
               </Stack>
             </Box>
           </Box>
